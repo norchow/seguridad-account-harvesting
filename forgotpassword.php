@@ -53,10 +53,10 @@
          xmlhttp.onreadystatechange = function() {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                document.getElementById("txtError").innerHTML = "";
-               document.getElementById("txtOk").innerHTML = xmlhttp.responseText;
+               document.getElementById("txtOk").innerHTML = "We've sent an email to regenerate your password";
             }else if(xmlhttp.status == 400){
                document.getElementById("txtOk").innerHTML = "";
-               document.getElementById("txtError").innerHTML = xmlhttp.responseText;
+               document.getElementById("txtError").innerHTML = "There is no user with that email";
             }
          }
 

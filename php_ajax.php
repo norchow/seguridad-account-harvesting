@@ -14,9 +14,9 @@
    // If result matched $myemail, table row must be 1 row
 	
    if($count == 1) {
-      echo "We've sent an email to regenerate your password";
+      echo "OK";
    }else {
       header('HTTP/1.1 400 Wrong mail');
-      echo "There is no user with that email";
+      echo "ERROR";
    }
 ?>
